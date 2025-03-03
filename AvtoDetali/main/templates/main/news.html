@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - AvtoDetails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">
+            <a href="{% url 'main' %}" class="logo-link">
+                <img src="{% static 'main/img/Mainlogo.png' %}" alt="Логотип" class="left">
+                <h1>AvtoDetails</h1>
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'catalog' %}">Каталог</a>
+            <a href="{% url 'delivery' %}">Доставка</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Основной контент страницы "Новости" -->
+    <main class="container">
+        <section class="news-section">
+            <h2>Новости</h2>
+
+            <!-- Новость 1 -->
+            <div class="news-card">
+                <img src="{% static 'main/img/news.png' %}" alt="Новость 1">
+                <div class="news-content">
+                    <h3>Новая коллекция автозапчастей</h3>
+                    <p class="news-date">10 октября 2025</p>
+                    <p>Мы рады представить вам новую коллекцию автозапчастей от ведущих производителей. Теперь в нашем ассортименте еще больше качественных деталей для вашего автомобиля.</p>
+                    <a href="#" class="btn">Читать далее</a>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="news-card">
+                <img src="{% static 'main/img/news.png' %}" alt="Новость 2">
+                <div class="news-content">
+                    <h3>Скидки на зимние шины</h3>
+                    <p class="news-date">5 октября 2025</p>
+                    <p>Специальное предложение: скидки до 30% на зимние шины от известных брендов. Успейте подготовить свой автомобиль к зиме!</p>
+                    <a href="#" class="btn">Читать далее</a>
+                </div>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="news-card">
+                <img src="{% static 'main/img/news.png' %}" alt="Новость 3">
+                <div class="news-content">
+                    <h3>Открытие нового склада</h3>
+                    <p class="news-date">1 октября 2025</p>
+                    <p>Мы открыли новый склад в Москве! Теперь доставка автозапчастей стала еще быстрее и удобнее для наших клиентов.</p>
+                    <a href="#" class="btn">Читать далее</a>
+                </div>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="news-card">
+                <img src="{% static 'main/img/news.png' %}" alt="Новость 4">
+                <div class="news-content">
+                    <h3>Акция на масла и фильтры</h3>
+                    <p class="news-date">25 сентября 2025</p>
+                    <p>Только до конца месяца скидки на масла и фильтры для двигателя. Не упустите возможность сэкономить!</p>
+                    <a href="#" class="btn">Читать далее</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <p>© 2025 AvtoDetails. Все права защищены.</p>
+        <div class="social-icons">
+            <p>Мы в социальных сетях: </p>
+            <a href="#"><img src="{% static 'main/img/VKlogo.png' %}" alt="VK" ></a>
+            <a href="#"><img src="{% static 'main/img/TGlogo.png' %}" alt="Telegram"></a>
+        </div>
+    </footer>
+</body>
+</html>

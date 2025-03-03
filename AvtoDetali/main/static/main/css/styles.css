@@ -1,0 +1,347 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили для текста в подвале */
+.footer p {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Стили для иконок социальных сетей */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: auto;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Основные стили для контейнера */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Приветственный блок */
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.welcome-section .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Акции и спецпредложения */
+.promotions {
+    margin-bottom: 40px;
+}
+
+.promotions h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.promo-cards .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.promo-cards .card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.promo-cards .card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.promo-cards .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.promo-cards .card .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Популярные товары */
+.popular-products {
+    margin-bottom: 40px;
+}
+
+.popular-products h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Стили для карточек товаров */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.product-card .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* О компании */
+.about-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Преимущества */
+.advantages {
+    margin-bottom: 40px;
+}
+
+.advantages h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.advantage-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.advantage-item {
+    text-align: center;
+    width: 25%;
+}
+
+.advantage-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.advantage-item p {
+    font-size: 16px;
+}
+
+/* Стили для секции новостей */
+.news-section {
+    margin-bottom: 40px;
+}
+
+.news-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Стили для карточки новости */
+.news-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.news-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.news-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.news-content .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
